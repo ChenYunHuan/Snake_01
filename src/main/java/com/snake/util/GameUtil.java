@@ -15,7 +15,7 @@ public class GameUtil {
      * @return 图片
      */
     public static Image getImage(String imagePath) {
-        URL url = GameUtil.class.getClassLoader().getResource("src/body.png");
+        URL url = GameUtil.class.getClassLoader().getResource(imagePath);
         System.out.println(url);
         BufferedImage img = null;
         try {
