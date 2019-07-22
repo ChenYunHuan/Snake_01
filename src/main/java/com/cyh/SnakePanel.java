@@ -21,7 +21,7 @@ public class SnakePanel extends JPanel implements KeyListener,ActionListener{
     ImageIcon left = new ImageIcon("src/left.png"); // 向左的蛇头
     ImageIcon right = new ImageIcon("src/right.png"); // 向右的蛇头
     ImageIcon food = new ImageIcon("src/food.png");  // 食物
-    ImageIcon body = new ImageIcon("src/body.png");  // 蛇的身体
+    ImageIcon body = new ImageIcon("src/snake_body.png");  // 蛇的身体
     ImageIcon title = new ImageIcon("src/title.jpg"); // 游戏界面的主题
 
     // 蛇的每一部分
@@ -41,7 +41,7 @@ public class SnakePanel extends JPanel implements KeyListener,ActionListener{
     boolean isStarted = false; // 判断游戏是否开始
     boolean isFailed = false; // 判断游戏是否结束
 
-    Timer timer = new Timer(100,this); // 每100毫秒调用一次ActionPerformed
+    Timer timer = new Timer(200,this); // 每100毫秒调用一次ActionPerformed
 
 
     public SnakePanel() { // 建造画布的构造函数
